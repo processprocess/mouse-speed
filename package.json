@@ -1,0 +1,23 @@
+{
+  "name": "mouse-speed",
+  "version": "1.0.0",
+  "description": "A node module to calculate mouse speed.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/processprocess/mouse-speed.git"
+  },
+  "keywords": [
+    "mouse",
+    "speed",
+    "velocity",
+    "move",
+    "movement"
+  ],
+  "author": "Philip Bell <philip.hunter.bell@gmail.com> (http://philipbell.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/processprocess/mouse-speed/issues"
+  },
+  "homepage": "https://github.com/processprocess/mouse-speed#readme"
+}
