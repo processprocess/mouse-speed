@@ -13,13 +13,13 @@ mouse-speed can be used in two ways:
 ```js
 const mouseSpeed = require('mouse-speed');
 
-window.addEventListener('mousemove', (e) => {
-  const speed = mouseSpeed(e);
+window.addEventListener('mousemove', (event) => {
+  const speed = mouseSpeed(event);
   console.log(speed.x, speed.y);
 })
 ```
 
-Put mouse-speed in a `mousemove` event and pass it the event object.
+Put mouse-speed in a `mousemove` event and pass it the `event` object.
 
 Speed is calculated and returned as an object with x and y values.
 
@@ -30,8 +30,8 @@ const mouseSpeed = require('mouse-speed');
 
 const speedTracker = {};
 
-window.addEventListener('mousemove', (e) => {
-  const speed = mouseSpeed(e, speedTracker);
+window.addEventListener('mousemove', (event) => {
+  const speed = mouseSpeed(event, speedTracker);
   console.log(speedTracker.speedX, speedTracker.speedY);
 })
 ```
