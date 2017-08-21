@@ -4,6 +4,8 @@ Calculates mouse speed via the event object, returning x and y speed values as a
 
 ## Usage
 
+[![NPM](https://nodei.co/npm/mouse-speed.png)](https://nodei.co/npm/mouse-speed/)
+
 ### `speed(e)`
 
 ```js
