@@ -1,6 +1,6 @@
 {
   "name": "mouse-speed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node module to calculate mouse speed.",
   "main": "index.js",
   "repository": {
