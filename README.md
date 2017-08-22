@@ -19,7 +19,7 @@ window.addEventListener('mousemove', (event) => {
 })
 ```
 
-Put mouse-speed in a `mousemove` event and pass it the `event` object.
+Put mouse-speed in a `mousemove` event handler and pass it the `event` object.
 
 Speed is calculated and returned as an object with x and y values.
 
@@ -36,11 +36,9 @@ window.addEventListener('mousemove', (event) => {
 })
 ```
 
-Optionally, An object can be passed to it.
+Optionally, an object can be passed to it.
 
 This object will now have two new values, accessible as speedX and speedY.
-
-This method
 
 ## License
 
