@@ -1,10 +1,10 @@
 # mouse-speed
 
-Calculates mouse speed via the event object, returning x and y speed values as an object.
-
-## Usage
+Calculates mouse speed during the `mousemove` event, returning x and y speed values.
 
 [![NPM](https://nodei.co/npm/mouse-speed.png)](https://nodei.co/npm/mouse-speed/)
+
+## Usage
 
 mouse-speed can be used in two ways:
 
@@ -39,6 +39,8 @@ window.addEventListener('mousemove', (event) => {
 Optionally, An object can be passed to it.
 
 This object will now have two new values, accessible as speedX and speedY.
+
+This method
 
 ## License
 
