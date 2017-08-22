@@ -1,7 +1,7 @@
 {
   "name": "mouse-speed",
-  "version": "1.0.1",
-  "description": "A node module to calculate mouse speed.",
+  "version": "1.0.2",
+  "description": "Mouse speed calculated on mouse move.",
   "main": "index.js",
   "repository": {
     "type": "git",
