@@ -1,6 +1,6 @@
 {
   "name": "mouse-speed",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Mouse speed calculated on mouse move.",
   "main": "index.js",
   "repository": {
@@ -12,7 +12,10 @@
     "speed",
     "velocity",
     "move",
-    "movement"
+    "movement",
+    "mouse speed",
+    "mouse move",
+    "mouse velocity"
   ],
   "author": "Philip Bell <philip.hunter.bell@gmail.com> (http://philipbell.org)",
   "license": "MIT",
