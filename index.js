@@ -1,18 +1,22 @@
-let oldX = 0;
-let oldY = 0;
-let timerId;
+"use strict";
 
-let mouseSpeed = (e, object = {}) => {
+var oldX = 0;
+var oldY = 0;
+var timerId = void 0;
+
+var mouseSpeed = function mouseSpeed(e) {
+  var object = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
 
   clearTimeout(timerId);
 
-  timerId = setTimeout(() => {
+  timerId = setTimeout(function () {
     object.speedX = 0;
     object.speedY = 0;
-  }, 50 );
+  }, 50);
 
-  let speedX = e.clientX - oldX;
-  let speedY = e.clientY - oldY;
+  var speedX = e.clientX - oldX;
+  var speedY = e.clientY - oldY;
 
   oldX = e.clientX;
   oldY = e.clientY;
@@ -20,7 +24,7 @@ let mouseSpeed = (e, object = {}) => {
   object.speedX = speedX;
   object.speedY = speedY;
 
-  return { x: speedX, y: speedY }
-}
+  return { x: speedX, y: speedY };
+};
 
 module.exports = mouseSpeed;
