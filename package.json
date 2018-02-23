@@ -1,6 +1,6 @@
 {
   "name": "mouse-speed",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Mouse speed calculated on mouse move.",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,8 @@
     "mouse move",
     "mouse velocity"
   ],
-  "author": "Philip Bell <philip.hunter.bell@gmail.com> (http://philipbell.org)",
+  "author":
+    "Philip Bell <philip.hunter.bell@gmail.com> (http://philipbell.org)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/processprocess/mouse-speed/issues"
