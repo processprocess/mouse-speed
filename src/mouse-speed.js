@@ -1,4 +1,4 @@
-export default class MouseSpeed {
+module.exports = class MouseSpeed {
   constructor() {
     this.cb = () => {};
     this.speedX = 0;
@@ -42,8 +42,8 @@ export default class MouseSpeed {
     this.cb = cb;
     window.addEventListener("mousemove", this.calcSpeed);
   }
-  destroy() {
-    console.log("destroyed");
+  destroy(cb) {
     window.removeEventListener("mousemove", this.calcSpeed);
+    cb();
   }
-}
+};

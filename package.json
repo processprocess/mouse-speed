@@ -1,8 +1,8 @@
 {
   "name": "mouse-speed",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Mouse speed calculated on mouse move.",
-  "main": "index.js",
+  "main": "dist/mouse-speed.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/processprocess/mouse-speed.git"
@@ -30,6 +30,7 @@
     "babel-preset-react": "^6.24.1"
   },
   "scripts": {
-    "build": "babel ./src --out-dir ./dist"
+    "build": "babel ./src --out-dir ./dist",
+    "prepublish": "npm run build"
   }
 }

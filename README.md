@@ -1,44 +1,39 @@
 # mouse-speed
 
-Calculates mouse speed during the `mousemove` event, returning x and y speed values.
+Calculates mouse speed during the `mousemove` event, creating speedX and speedY values on the instance of mouse-speed.
 
 [![NPM](https://nodei.co/npm/mouse-speed.png)](https://nodei.co/npm/mouse-speed/)
 
 ## Usage
 
-mouse-speed can be used in two ways:
-
-### `speed(e)`
-
 ```js
-var mouseSpeed = require("mouse-speed");
+var MouseSpeed = require("mouse-speed");
+var speed = new MouseSpeed();
 
-window.addEventListener("mousemove", event => {
-    var speed = mouseSpeed(event);
-    console.log(speed.x, speed.y);
-});
+var onCalcSpeed = function() {
+    console.log(speed.speedX, speed.speedY);
+};
+
+speed.init(onCalcSpeed);
 ```
 
-Put mouse-speed in a `mousemove` event handler and pass it the `event` object.
+Create a new instance of mouse-speed in your project.
 
-Speed is calculated and returned as an object with x and y values.
+The speed values are accessed through the speedX and speedY properties of the instance.
 
-### `speed(e, object)`
+The function passed to mouse-speed will fire on every mouse-move event.
 
 ```js
-var mouseSpeed = require("mouse-speed");
+var onDestroyFunc = function() {
+    console.log("destroyed");
+};
 
-var speedTracker = {};
-
-window.addEventListener("mousemove", event => {
-    var speed = mouseSpeed(event, speedTracker);
-    console.log(speedTracker.speedX, speedTracker.speedY);
-});
+speed.destroy(onDestroyFunc);
 ```
 
-Optionally, an object can be passed to it.
+To remove the event listener, call .destroy on the instance of mouse-speed.
 
-This object will now have two new values, accessible as speedX and speedY.
+An optional callback can be passed that will be called when the event listener is removed
 
 ## License
 
