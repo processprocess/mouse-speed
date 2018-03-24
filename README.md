@@ -33,7 +33,7 @@ speed.destroy(onDestroyFunc);
 
 To remove the event listener, call `destroy` on the instance of mouse-speed.
 
-An optional callback function can be passed that will be called when the event listener is removed
+An optional function can be passed that will be called when the event listener is removed
 
 ## License
 
