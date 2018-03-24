@@ -23,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/processprocess/mouse-speed/issues"
   },
-  "homepage": "https://github.com/processprocess/mouse-speed#readme"
+  "homepage": "https://github.com/processprocess/mouse-speed#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist"
+  }
 }
