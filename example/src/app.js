@@ -1,5 +1,5 @@
-// import MouseSpeed from "../../src/mouse-speed.js";
 var MouseSpeed = require("../../src/mouse-speed.js");
+// var MouseSpeed = require("mouse-speed");
 
 let speed = new MouseSpeed();
 

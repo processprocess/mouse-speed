@@ -30,7 +30,6 @@
     "babel-preset-react": "^6.24.1"
   },
   "scripts": {
-    "build": "babel ./src --out-dir ./dist",
-    "prepublish": "npm run build"
+    "build": "babel ./src --out-dir ./dist"
   }
 }
