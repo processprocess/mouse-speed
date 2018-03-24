@@ -1,6 +1,6 @@
 # mouse-speed
 
-Calculates mouse speed during the `mousemove` event, creating speedX and speedY values on the instance of mouse-speed.
+Calculates mouse speed during the `mousemove` event.
 
 [![NPM](https://nodei.co/npm/mouse-speed.png)](https://nodei.co/npm/mouse-speed/)
 
@@ -19,9 +19,9 @@ speed.init(onCalcSpeed);
 
 Create a new instance of mouse-speed in your project.
 
-The speed values are accessed through the speedX and speedY properties of the instance.
+The speed values are accessed through the `speedX` and `speedY` properties on the instance.
 
-The function passed to mouse-speed will fire on every mouse-move event.
+The function passed to the instance will fire on every mousemove event.
 
 ```js
 var onDestroyFunc = function() {
@@ -31,9 +31,9 @@ var onDestroyFunc = function() {
 speed.destroy(onDestroyFunc);
 ```
 
-To remove the event listener, call .destroy on the instance of mouse-speed.
+To remove the event listener, call `destroy` on the instance of mouse-speed.
 
-An optional callback can be passed that will be called when the event listener is removed
+An optional callback function can be passed that will be called when the event listener is removed
 
 ## License
 
