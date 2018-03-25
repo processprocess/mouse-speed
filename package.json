@@ -1,6 +1,6 @@
 {
   "name": "mouse-speed",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Mouse speed calculated on mouse move.",
   "main": "dist/mouse-speed.js",
   "repository": {
