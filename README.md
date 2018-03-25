@@ -9,12 +9,14 @@ Calculates mouse speed during the `mousemove` event.
 ```js
 var MouseSpeed = require("mouse-speed");
 var speed = new MouseSpeed();
+speed.init(onCalcSpeed);
 
 var onCalcSpeed = function() {
-    console.log(speed.speedX, speed.speedY);
+    var speedX = speed.speedX;
+    var speedY = speed.speedY;
+    // do anything you want with speed values
+    console.log(speedX, speedY);
 };
-
-speed.init(onCalcSpeed);
 ```
 
 Create a new instance of mouse-speed in your project.
@@ -24,11 +26,11 @@ The speed values are accessed through the `speedX` and `speedY` properties on th
 The function passed to the instance will fire on every mousemove event.
 
 ```js
+speed.destroy(onDestroyFunc);
+
 var onDestroyFunc = function() {
     console.log("destroyed");
 };
-
-speed.destroy(onDestroyFunc);
 ```
 
 To remove the event listener, call `destroy` on the instance of mouse-speed.

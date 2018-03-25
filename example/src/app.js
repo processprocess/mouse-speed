@@ -1,7 +1,7 @@
 var MouseSpeed = require("../../src/mouse-speed.js");
 // var MouseSpeed = require("mouse-speed");
 
-let speed = new MouseSpeed();
+var speed = new MouseSpeed();
 
 var speedFunc = function() {
   console.log(speed.speedX, speed.speedY);
@@ -13,7 +13,7 @@ var onDestroyFunc = function() {
   console.log("destroyed");
 };
 
-let cancel = document.createElement("button");
+var cancel = document.createElement("button");
 cancel.innerHTML = "destroy";
 cancel.addEventListener("click", () => {
   speed.destroy(onDestroyFunc);
